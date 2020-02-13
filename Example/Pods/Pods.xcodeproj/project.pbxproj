@@ -58,7 +58,6 @@
 		5B8DC6716BDD04AF78AC8048F5BACF38 /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5D84D0A37C8FEF71B3748E637B755 /* SatisfyAllOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5B9A242E23F5A9670094967B /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A242D23F5A9670094967B /* ActionSheet.swift */; };
 		5B9A243023F5AABD0094967B /* ActionSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A242F23F5AABD0094967B /* ActionSheetController.swift */; };
-		5B9A243223F5AE300094967B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A243123F5AE300094967B /* ViewExtension.swift */; };
 		5CE5E8EA75E0B3DC5BE140B61DF37EFD /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4146C224AAED48AE519602D554E4ACA /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62DFF94A7A777939C861EDA13627999B /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = D50C1A0D16BFAD8846126533C953C7BA /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63B6EE789529A220E576A10E3356FBEE /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2285555C127698E7886F270EA14750 /* NimbleEnvironment.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -295,9 +294,8 @@
 		572E2B6BC86F1492D00AD6769E465605 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Sources/Quick/ExampleGroup.swift; sourceTree = "<group>"; };
 		58F5D84D0A37C8FEF71B3748E637B755 /* SatisfyAllOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAllOf.swift; path = Sources/Nimble/Matchers/SatisfyAllOf.swift; sourceTree = "<group>"; };
 		59D905CBF55A2D28A21556AEBC063AE5 /* HaveValidDynamicTypeSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveValidDynamicTypeSnapshot.swift; path = DynamicType/HaveValidDynamicTypeSnapshot.swift; sourceTree = "<group>"; };
-		5B9A242D23F5A9670094967B /* ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
-		5B9A242F23F5AABD0094967B /* ActionSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetController.swift; sourceTree = "<group>"; };
-		5B9A243123F5AE300094967B /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		5B9A242D23F5A9670094967B /* ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = ActionSheet/Classes/ActionSheet.swift; sourceTree = "<group>"; };
+		5B9A242F23F5AABD0094967B /* ActionSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActionSheetController.swift; path = ActionSheet/Classes/ActionSheetController.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE5915B278F2BB7FDC396B332969DEB /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Sources/QuickObjectiveC/DSL/QCKDSL.h; sourceTree = "<group>"; };
 		6024C935E6646CC9593647346BD3C6C6 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Sources/Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
@@ -624,7 +622,6 @@
 			children = (
 				5B9A242D23F5A9670094967B /* ActionSheet.swift */,
 				5B9A242F23F5AABD0094967B /* ActionSheetController.swift */,
-				5B9A243123F5AE300094967B /* ViewExtension.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1212,7 +1209,6 @@
 			files = (
 				FD1994017E3BA1DE7F8543F38ECA84DC /* ActionSheet-dummy.m in Sources */,
 				5B9A242E23F5A9670094967B /* ActionSheet.swift in Sources */,
-				5B9A243223F5AE300094967B /* ViewExtension.swift in Sources */,
 				5B9A243023F5AABD0094967B /* ActionSheetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
