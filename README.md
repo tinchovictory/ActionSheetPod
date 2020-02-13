@@ -1,9 +1,8 @@
-# ActionSheet
+# ActionSheetPod
 
-[![CI Status](https://img.shields.io/travis/tinchovictory/ActionSheet.svg?style=flat)](https://travis-ci.org/tinchovictory/ActionSheet)
-[![Version](https://img.shields.io/cocoapods/v/ActionSheet.svg?style=flat)](https://cocoapods.org/pods/ActionSheet)
-[![License](https://img.shields.io/cocoapods/l/ActionSheet.svg?style=flat)](https://cocoapods.org/pods/ActionSheet)
-[![Platform](https://img.shields.io/cocoapods/p/ActionSheet.svg?style=flat)](https://cocoapods.org/pods/ActionSheet)
+[![CI Status](https://img.shields.io/travis/tinchovictory/ActionSheetPod.svg?style=flat)](https://travis-ci.org/tinchovictory/ActionSheetPod)
+[![Version](https://img.shields.io/github/v/release/tinchovictory/ActionSheetPod)](https://cocoapods.org/pods/ActionSheetPod)
+[![License](https://img.shields.io/github/licence/tinchovictory/ActionSheetPod)](https://cocoapods.org/pods/ActionSheetPod)
 
 ## Example
 
