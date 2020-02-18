@@ -10,7 +10,8 @@ import UIKit
 public class ActionSheetController: UIViewController {
     
     private var backgroundBlurView: UIView!
-    public var contentView: UIView!
+    private var contentView: UIView!
+    public var contentViewController: UIViewController!
     public var actionSheet: ActionSheet!
 
     override public func loadView() {
@@ -21,9 +22,15 @@ public class ActionSheetController: UIViewController {
         self.backgroundBlurView.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundBlurView.backgroundColor = .black
         self.view.addSubview(self.backgroundBlurView)
-        
+       
+        self.contentView = UIView()
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.contentView)
+        
+        // Add contentVC
+        addChild(contentViewController)
+        self.contentView.addSubview(contentViewController.view)
+        self.contentViewController.view.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             self.backgroundBlurView.topAnchor.constraint(equalTo: self.view.topAnchor),
@@ -34,7 +41,14 @@ public class ActionSheetController: UIViewController {
             self.contentView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             self.contentView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             self.contentView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            
+            self.contentViewController.view.topAnchor.constraint(equalTo: self.contentView.topAnchor),
+            self.contentViewController.view.rightAnchor.constraint(equalTo: self.contentView.rightAnchor),
+            self.contentViewController.view.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
+            self.contentViewController.view.leftAnchor.constraint(equalTo: self.contentView.leftAnchor),
         ])
+    
+        contentViewController.didMove(toParent: self)
     }
 
     override public func viewDidLoad() {

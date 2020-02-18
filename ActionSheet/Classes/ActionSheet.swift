@@ -11,17 +11,17 @@ public class ActionSheet {
     
     private let parentVC: UIViewController
     private weak var actionSheetController: ActionSheetController?
-    private var contentView: UIView
+    private var contentViewController: UIViewController
     
-    public init(target: UIViewController, contentView: UIView) {
+    public init(target: UIViewController, contentViewController: UIViewController) {
         self.parentVC = target
-        self.contentView = contentView
+        self.contentViewController = contentViewController
     }
     
     public func present() {
         let actionSheetVC = ActionSheetController()
         self.actionSheetController = actionSheetVC
-        self.actionSheetController?.contentView = self.contentView
+        self.actionSheetController?.contentViewController = self.contentViewController
         self.actionSheetController?.actionSheet = self
         self.actionSheetController?.modalPresentationStyle = .overFullScreen
         parentVC.present(actionSheetVC, animated: false, completion: nil)
